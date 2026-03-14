@@ -1136,7 +1136,7 @@ return (
 
       {/* ── FOOTER ── */}
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-        <p className="text-xs text-slate-400">Mandarin Chinese Guide <br /> © 2026 EugeneYip.com All Rights Reserved.</p>
+        <p className="text-xs text-slate-400">Mandarin Chinese Complete Learning Guide — Traditional Characters (正體字) — For English-background learners</p>
       </div>
     </main>
   </div>
