@@ -1,4 +1,4 @@
-# Mandarin Chinese Guide
+# Learn Mandarin Chinese
 If `Deploy from a branch` works but selecting `GitHub Actions` appears to do nothing, check these in order:
 
 1. **Workflow file exists on the branch you push to**
