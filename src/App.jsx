@@ -1136,7 +1136,7 @@ return (
 
       {/* ── FOOTER ── */}
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-        <p className="text-xs text-slate-400">Mandarin Chinese Guide</p>
+        <p className="text-xs text-slate-400">Mandarin Chinese Guide <br /> © 2026 EugeneYip.com All Rights Reserved.</p>
       </div>
     </main>
   </div>
