@@ -211,10 +211,13 @@ function Card({ icon, title, description, children, className = "" }) {
 }
 
 function Table({ columns, rows, compact = false }) {
+  const colCount = columns.length;
+  // Ensure tables with 4+ columns get enough width to avoid text cramming on mobile
+  const minW = colCount >= 4 ? "min-w-[560px]" : colCount >= 3 ? "min-w-[420px]" : "min-w-full";
   return (
-    <div className="overflow-hidden rounded-xl border border-slate-200">
+    <div className="relative overflow-hidden rounded-xl border border-slate-200">
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-slate-200 text-left">
+        <table className={`${minW} w-full divide-y divide-slate-200 text-left`}>
           <thead className="bg-slate-50">
             <tr>
               {columns.map((col) => (
@@ -226,7 +229,7 @@ function Table({ columns, rows, compact = false }) {
             {rows.map((row, i) => (
               <tr key={i} className="align-top hover:bg-slate-50/60 transition-colors">
                 {row.map((cell, j) => (
-                  <td key={j} className={`${compact ? "px-3 py-2 text-xs" : "px-4 py-2.5 text-sm"} leading-relaxed text-slate-700 ${j === 0 ? "font-medium text-slate-900" : ""}`} style={{ minWidth: j === 0 ? 80 : undefined }}>{cell}</td>
+                  <td key={j} className={`${compact ? "px-3 py-2 text-xs" : "px-4 py-2.5 text-sm"} leading-relaxed text-slate-700 ${j === 0 ? "font-medium text-slate-900 whitespace-nowrap" : ""}`}>{cell}</td>
                 ))}
               </tr>
             ))}
