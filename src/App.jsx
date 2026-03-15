@@ -1132,7 +1132,7 @@ export default function ChineseLearningGuide() {
 
           {/* ── FOOTER ── */}
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-            <p className="text-xs text-slate-400">Mandarin Chinese Guide<br />
+            <p className="text-xs text-slate-400">Mandarin Chinese Learning Guide<br />
               © 2026 EugeneYip.com All Rights Reserved.</p>
           </div>
         </main>
